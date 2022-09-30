@@ -1,16 +1,8 @@
-header {
-    display: inline-block;
-    border-style: solid;
-    background-color: rgb(55, 151, 168);
-}
+/* CSS de l'en tête */
 
-.bi {
-    fill: blueviolet;
-    width: 3em; 
-    height: 3em;
-}
-
-h1 {
-    display: inline-block;
-    text-align: center;
+.container-fluid {
+    background-color: hsl(71, 76%, 39%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -7px;
+    margin-bottom: -7px;
 }
