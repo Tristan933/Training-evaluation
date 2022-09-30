@@ -6,3 +6,32 @@
     margin-top: -7px;
     margin-bottom: -7px;
 }
+
+/* media queries pour le mobile first */
+
+/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et 660px de hauteur. */
+@media screen and (min-width: 375px) and (min-height: 660px) and (orientation: portrait) {
+    .picture {
+       max-height: 100%;
+       max-width: 100%;
+    }
+}
+/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 660px de largeur. */
+@media screen and (min-width: 660px) and (min-height: 375px) and (orientation: landscape) {
+    .picture {
+       max-height: 100%;
+       max-width: 100%;
+    }
+}
+/* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .picture {
+       display: none;
+    }
+}
+/* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
+@media screen and (max-width: 660px) and (orientation: landscape) {
+    .picture {
+       display: none;
+    }
+}
