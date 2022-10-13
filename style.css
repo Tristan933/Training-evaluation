@@ -1,37 +1,133 @@
 /* CSS de l'en tête */
 
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  text-shadow: -1px -1px #fb6, 1px 1px #d60;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 16px; 
+  text-align: center;
+}
+
+h2 {
+    text-align: center;
+    border: rgba(243, 217, 17, 0.237) solid 1rem;
+    border-radius: 40% 40%;
+    background: rgba(180, 81, 207, 0.274);
+}
+
+.navbar-brand {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .container-fluid {
     background-color: hsl(71, 76%, 39%);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: -7px;
     margin-bottom: -7px;
 }
 
+.card-title {
+    background: #fb6;
+}
+
+.card-text {
+    background: rgb(0, 255, 123);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+}
+
 /* media queries pour le mobile first */
 
-/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et 660px de hauteur. */
-@media screen and (min-width: 375px) and (min-height: 660px) and (orientation: portrait) {
+/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur. */
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
     .picture {
-       max-height: 100%;
-       max-width: 100%;
+       display: block;
+       max-height: 80vh;
+       max-width: 80vw;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
-/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 660px de largeur. */
-@media screen and (min-width: 660px) and (min-height: 375px) and (orientation: landscape) {
+
+/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 576px de largeur. */
+
+@media screen and (min-width: 576px) and (min-height: 375px) and (orientation: landscape) {
     .picture {
-       max-height: 100%;
-       max-width: 100%;
+       display: block;
+       max-height: 80vh;
+       max-width: 80vw;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
+
 /* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
+
 @media screen and (max-width: 375px) and (orientation: portrait) {
     .picture {
        display: none;
     }
 }
+
 /* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
-@media screen and (max-width: 660px) and (orientation: landscape) {
+
+@media screen and (max-width: 576px) and (orientation: landscape) {
     .picture {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+    .picture {
+        display: block;
+        max-height: 80vh;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
+
+/* media queries pour adapter la photo en mode portrait et paysage pour écran de 375 px de hauteur et largeur */
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+    .card-img {
+        max-height: 50%;
+        max-width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
+    .card-img {
+        max-height: 50%;
+        max-width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .card-img {
+       display: none;
+    }
+}
+
+/* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
+
+@media screen and (max-width: 375px) and (orientation: landscape) {
+    .card-img {
        display: none;
     }
 }
