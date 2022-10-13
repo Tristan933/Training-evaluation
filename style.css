@@ -30,15 +30,22 @@ h2 {
 
 .card-title {
     background: #fb6;
+    text-align: center;
 }
 
 .card-text {
     background: rgb(0, 255, 123);
+    text-align: center;
+}
+
+.pagination {
+    border: solid black 1px;
+    background: rgb(255, 204, 0);
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     padding: 5px;
     background-color: #45a1ff;
     color: #fff;
@@ -46,7 +53,7 @@ footer {
 
 /* media queries pour le mobile first */
 
-/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur. */
+/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur minimum. */
 
 @media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
     .picture {
@@ -100,8 +107,8 @@ footer {
 
 @media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
     .card-img {
-        max-height: 50%;
-        max-width: 50%;
+        max-height: 30%;
+        max-width: 30%;
         text-align: center;
         margin: auto;
     }
@@ -109,8 +116,8 @@ footer {
 
 @media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
     .card-img {
-        max-height: 50%;
-        max-width: 50%;
+        max-height: 30%;
+        max-width: 30%;
         text-align: center;
         margin: auto;
     }
@@ -129,5 +136,31 @@ footer {
 @media screen and (max-width: 375px) and (orientation: landscape) {
     .card-img {
        display: none;
+    }
+}
+
+/* media queries pour le mobile first de la deuxième page */
+
+/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur minimum. */
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+    .picture-lion {
+       display: block;
+       max-height: 80vh;
+       max-width: 80vw;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
+/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 576px de largeur. */
+
+@media screen and (min-width: 576px) and (min-height: 375px) and (orientation: landscape) {
+    .picture-lion {
+       display: block;
+       max-height: 80vh;
+       max-width: 80vw;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
