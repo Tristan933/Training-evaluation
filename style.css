@@ -4,8 +4,12 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+main {
+    background: rgba(199, 255, 102, 0.797);
+}
+
 h1 {
-  text-shadow: -1px -1px #fb6, 1px 1px #d60;
+  text-shadow: -1px -1px #fb6, 1px 1px #fb6;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 16px; 
   text-align: center;
@@ -13,9 +17,9 @@ h1 {
 
 h2 {
     text-align: center;
-    border: rgba(243, 217, 17, 0.237) solid 1rem;
+    border: #fb6 solid 1rem;
     border-radius: 40% 40%;
-    background: rgba(180, 81, 207, 0.274);
+    background: #2dcaffdf;
 }
 
 .navbar-brand {
@@ -23,9 +27,13 @@ h2 {
 }
 
 .container-fluid {
-    background-color: hsl(71, 76%, 39%);
+    background-color: #2dcaffdf;
     margin-top: -7px;
     margin-bottom: -7px;
+}
+
+section {
+    background: #e10909;
 }
 
 .card-title {
@@ -34,7 +42,7 @@ h2 {
 }
 
 .card-text {
-    background: rgb(0, 255, 123);
+    background: rgba(199, 255, 102, 0.797);
     text-align: center;
 }
 
@@ -45,7 +53,7 @@ h2 {
 
 .don {
     background-color: #008CBA;
-    border-radius: 50%;
+    border-radius: 10%;
     color: white;
     padding: 15px 32px;
     text-align: center;
