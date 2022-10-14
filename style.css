@@ -75,9 +75,9 @@ footer {
 
 /* media queries pour le mobile first */
 
-/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur minimum. */
+/* media queries pour adapter la photo en mode portrait pour téléphones de 301px de largeur minimum. */
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+@media screen and (min-width: 301px) and (orientation: portrait) {
     .picture {
        display: block;
        max-height: 80vh;
@@ -87,9 +87,9 @@ footer {
     }
 }
 
-/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 375px de largeur. */
+/* media queries pour adapter la photo en mode paysage pour téléphones de 301 px de largeur. */
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
+@media screen and (min-width: 301px) and (orientation: landscape) {
     .picture {
        display: block;
        max-height: 80vh;
@@ -115,6 +115,8 @@ footer {
     }
 }
 
+/* media queries pour adapter la photo en mode paysage pour écran de 1366px de largeur. */
+
 @media screen and (min-width: 1366px) and (orientation: landscape) {
     .picture {
         display: block;
@@ -125,43 +127,60 @@ footer {
     }   
 }
 
-/* media queries pour adapter la photo en mode portrait et paysage pour écran de 375 px de hauteur et largeur */
+/* media queries pour le mobile first de la deuxième page */
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+/* media queries pour adapter la photo en mode portrait et paysage pour écran de 301px de largeur. */
+
+@media screen and (min-width: 301px) and (orientation: portrait) {
     .picture-lion {
-        max-height: 30%;
-        max-width: 30%;
-        text-align: center;
-        margin: auto;
+        display: block;
+        max-height: 80vh;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
+@media screen and (min-width: 301px) and (orientation: landscape) {
     .picture-lion {
-        max-height: 30%;
-        max-width: 30%;
-        text-align: center;
-        margin: auto;
+        display: block;
+        max-height: 80vh;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* media queries pour adapter la photo en mode paysage pour écran de 1366px de largeur. */
+
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+    .picture-lion {
+        display: block;
+        max-height: 80vh;
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
+/* media queries pour adapter la photo en mode portrait afin que l'image disparaisse. */
 
-@media screen and (max-width: 375px) and (orientation: portrait) {
+@media screen and (max-width: 300px) and (orientation: portrait) {
     .picture-lion {
        display: none;
     }
 }
 
-/* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
+/* media queries pour adapter la photo en mode paysage afin que l'image disparaisse. */
 
-@media screen and (max-width: 375px) and (orientation: landscape) {
+@media screen and (max-width: 300px) and (orientation: landscape) {
     .picture-lion {
        display: none;
     }
 }
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+/* media queries pour adapter les placeholders en mode portrait et paysage. */
+
+@media screen and (min-width: 301px) and (orientation: portrait) {
     .card-img {
        display: block;
        max-height: 50%;
@@ -171,38 +190,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
+@media screen and (min-width: 301px) and (orientation: landscape) {
     .card-img {
         display: block;
         max-height: 50%;
         max-width: 50%;
         margin-left: auto;
         margin-right: auto;
-    }
-}
-
-/* media queries pour le mobile first de la deuxième page */
-
-/* media queries pour adapter la photo en mode portrait pour téléphones de 375px de largeur et de hauteur minimum. */
-
-@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
-    .picture-lion {
-       display: block;
-       max-height: 80vh;
-       max-width: 80vw;
-       margin-left: auto;
-       margin-right: auto;
-    }
-}
-
-/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 576px de largeur. */
-
-@media screen and (min-width: 576px) and (min-height: 375px) and (orientation: landscape) {
-    .picture-lion {
-       display: block;
-       max-height: 80vh;
-       max-width: 80vw;
-       margin-left: auto;
-       margin-right: auto;
     }
 }
