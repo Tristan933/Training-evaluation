@@ -1,7 +1,8 @@
 /* CSS de l'en tête */
 
 * {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
 main {
@@ -30,10 +31,6 @@ h2 {
     background-color: #2dcaffdf;
     margin-top: -7px;
     margin-bottom: -7px;
-}
-
-section {
-    background: #e10909;
 }
 
 .card-title {
@@ -112,7 +109,7 @@ footer {
 
 /* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
 
-@media screen and (max-width: 576px) and (orientation: landscape) {
+@media screen and (max-width: 375px) and (orientation: landscape) {
     .picture {
        display: none;
     }
@@ -131,7 +128,7 @@ footer {
 /* media queries pour adapter la photo en mode portrait et paysage pour écran de 375 px de hauteur et largeur */
 
 @media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
-    .card-img {
+    .picture-lion {
         max-height: 30%;
         max-width: 30%;
         text-align: center;
@@ -140,7 +137,7 @@ footer {
 }
 
 @media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
-    .card-img {
+    .picture-lion {
         max-height: 30%;
         max-width: 30%;
         text-align: center;
@@ -151,7 +148,7 @@ footer {
 /* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
 
 @media screen and (max-width: 375px) and (orientation: portrait) {
-    .card-img {
+    .picture-lion {
        display: none;
     }
 }
@@ -159,8 +156,28 @@ footer {
 /* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
 
 @media screen and (max-width: 375px) and (orientation: landscape) {
-    .card-img {
+    .picture-lion {
        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: portrait) {
+    .card-img {
+       display: block;
+       max-height: 50%;
+       max-width: 50%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
+    .card-img {
+        display: block;
+        max-height: 50%;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
