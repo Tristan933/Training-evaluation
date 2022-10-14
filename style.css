@@ -101,7 +101,7 @@ footer {
 
 /* media queries pour adapter la photo en mode portrait afin que l'image disparaisse */
 
-@media screen and (max-width: 375px) and (orientation: portrait) {
+@media screen and (max-width: 300px) and (orientation: portrait) {
     .picture {
        display: none;
     }
@@ -109,7 +109,7 @@ footer {
 
 /* media queries pour adapter la photo en mode paysage afin que l'image disparaisse */
 
-@media screen and (max-width: 375px) and (orientation: landscape) {
+@media screen and (max-width: 300px) and (orientation: landscape) {
     .picture {
        display: none;
     }
