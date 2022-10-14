@@ -87,9 +87,9 @@ footer {
     }
 }
 
-/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 576px de largeur. */
+/* media queries pour adapter la photo en mode paysage pour téléphones de 375px de hauteur et 375px de largeur. */
 
-@media screen and (min-width: 576px) and (min-height: 375px) and (orientation: landscape) {
+@media screen and (min-width: 375px) and (min-height: 375px) and (orientation: landscape) {
     .picture {
        display: block;
        max-height: 80vh;
