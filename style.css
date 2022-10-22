@@ -74,6 +74,10 @@ footer {
     color: #fff;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* media queries pour le mobile first */
 
 /* media queries pour adapter la photo en mode portrait pour téléphones de 301px de largeur minimum. */
