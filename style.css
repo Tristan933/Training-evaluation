@@ -68,6 +68,7 @@ h2 {
 footer {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     padding: 5px;
     background-color: #45a1ff;
     color: #fff;
